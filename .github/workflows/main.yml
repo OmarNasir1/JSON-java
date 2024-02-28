@@ -22,4 +22,4 @@ jobs:
       run: mvn test
 
     - name: Run tests with NonDex
-      run: mvn edu.illinois:nondex-maven-plugin:1.1.2:nondex -DnondexSeed=12345
+      run: mvn edu.illinois:nondex-maven-plugin:1.1.2:nondex -DnondexRuns=15 -DnondexSeed=54321  -DnondexMode=FULL
