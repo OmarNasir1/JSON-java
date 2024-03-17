@@ -17,4 +17,4 @@ jobs:
     - name: Run tests without NonDex
       run: mvn -pl . test -Dtest=org.json.junit.XMLTest#testIndentComplicatedJsonObjectWithArrayAndWithConfig
     - name: Run tests with NonDex
-      run: mvn -pl . edu.illinois:nondex-maven-plugin:2.1.1:nondex -Dtest=org.json.junit.XMLTest#testIndentComplicatedJsonObjectWithArrayAndWithConfig
+      run: mvn -pl . edu.illinois:nondex-maven-plugin:2.1.1:nondex -Dtest=org.json.junit.XMLTest#testIndentComplicatedJsonObjectWithArrayAndWithConfig -DnondexRuns=100
